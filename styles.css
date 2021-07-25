@@ -21,6 +21,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--main-white)
 }
 
 #navbar {
@@ -77,7 +78,7 @@ h1 {
     font-weight: 200;
 }
 
-#projects-section {
+#projects {
     background-color: var(--main-blue);
     text-align: center;
     padding: 5rem 1rem;
@@ -109,7 +110,7 @@ h2 {
     margin-bottom: 3rem;
 }
 
-.projects-container-link {
+.projects-tile {
     background: var(--main-gray);
     font-family: 'Poppins';
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 3px 4px 2px rgba(0, 0, 0, 0.25);
@@ -203,14 +204,21 @@ p:hover .code {
 }
 
 .contact-links-container {
-    min-width: 30rem;
+    width: 80vw;
     margin-top: 10rem;
 }
 
-.contact-links {
+.profile-link {
     color: var(--main-white);
     margin: .5rem;
     display: inline-block;
+    border-radius: 3px;
+    text-shadow: 3px 2px 1px #1f1f1f;
+    transition: transform .4s ease-out;
+}
+
+.profile-link:hover {
+    transform: translateY(8px);
 }
 
 .fab .fa-solid {
@@ -221,4 +229,15 @@ p:hover .code {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
+}
+
+footer {
+    border-top: 2px solid rgba(0, 0, 0, .25);
+    display: inline-flex;
+    justify-content: center;
+}
+
+footer > p {
+    margin: 2.5rem;
+    font-weight: 300;
 }
